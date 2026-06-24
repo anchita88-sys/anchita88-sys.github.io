@@ -26,6 +26,7 @@ body {
   background: radial-gradient(circle at top, #152238 0%, var(--bg) 42%);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
@@ -258,7 +259,7 @@ a {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1rem;
 }
 
@@ -272,6 +273,7 @@ a {
   background: rgba(23, 32, 51, 0.88);
   box-shadow: var(--shadow);
   transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  min-width: 0;
 }
 
 .contact-card:hover {
@@ -319,13 +321,14 @@ a {
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--text);
-  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .contact-hint {
   font-size: 0.88rem;
   color: var(--muted);
   line-height: 1.45;
+  margin-top: 0.15rem;
 }
 
 .site-footer {
@@ -352,12 +355,83 @@ a {
     display: none;
   }
 
-  .about-grid,
+  .container {
+    width: min(calc(100% - 1.25rem), var(--max));
+  }
+
+  .section {
+    padding: 2.75rem 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.55rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding-bottom: 3rem;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .contact-card {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 0.9rem;
+    row-gap: 0.15rem;
+    align-items: start;
+    padding: 1rem 1rem;
+    box-shadow: none;
+  }
+
+  .contact-card:hover {
+    transform: none;
+  }
+
+  .contact-icon {
+    grid-row: 1 / span 3;
+    grid-column: 1;
+    align-self: center;
+    margin-bottom: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 14px;
+  }
+
+  .contact-label,
+  .contact-value,
+  .contact-hint {
+    grid-column: 2;
+  }
+
+  .contact-value {
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .contact-hint {
+    font-size: 0.82rem;
+    margin-top: 0;
   }
 
   .hero {
     padding-top: 3.5rem;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
   }
 }
