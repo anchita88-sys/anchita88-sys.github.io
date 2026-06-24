@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anchita Sood — public health, data analysis, and health equity projects." />
+  <title>Anchita Sood · Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">Anchita Sood</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Public health · Data · Equity</span>
+        <h1>Research and projects that turn data into action.</h1>
+        <p class="lead">
+          A home for my public health analyses, policy-focused reports, and future work across
+          health equity, preventive care, and population data.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View projects</a>
+          <a
+            class="button button-secondary"
+            href="https://anchita88-sys.github.io/nsw-phn-preventive-health/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Latest report
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>Who I am and the kind of work I publish here.</p>
+        </div>
+        <div class="about-grid">
+          <article class="panel">
+            <h3>Focus</h3>
+            <p>
+              I work at the intersection of public health, data analysis, and health equity —
+              especially where cultural diversity, access, and preventive care meet.
+            </p>
+            <p>
+              This site links to standalone project reports hosted on GitHub Pages, so each
+              project stays readable, citable, and easy to share from a CV or portfolio.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Methods &amp; sources</h3>
+            <ul>
+              <li>AIHW and ABS datasets</li>
+              <li>PHN-level health utilisation analysis</li>
+              <li>Narrative reports for policy audiences</li>
+              <li>Equity-focused interpretation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Published work with links to full reports and repositories.</p>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Add your preferred contact details here when ready.</p>
+        </div>
+        <article class="panel">
+          <p>
+            GitHub:
+            <a href="https://github.com/anchita88-sys" target="_blank" rel="noopener noreferrer">
+              github.com/anchita88-sys
+            </a>
+          </p>
+          <p class="empty-state">
+            Tip: add your email or LinkedIn URL in <code>index.html</code> when you want them public.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Anchita Sood</span>
+      <div class="footer-links">
+        <a href="https://github.com/anchita88-sys" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/projects.js"></script>
+  <script src="assets/site.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
