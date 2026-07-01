@@ -520,3 +520,29 @@ a {
   color: var(--muted);
   line-height: 1.45;
 }
+
+.screenshot-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.screenshot-img-mobile {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.screenshot-card-wide {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 900px) {
+  .screenshot-card-wide {
+    max-width: 72%;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+  }
+}
