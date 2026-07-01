@@ -4,6 +4,19 @@
  */
 window.PROJECTS = [
   {
+    title: "NSW Clinical Risk & Harm Reduction Interface",
+    summary:
+      "Real-time statewide tool that turns official NSW Health alerts into localized action. Dual-mode UI for community clinics and nightlife events, with geolocation-driven naloxone pathways and a data provenance engine for official and peer-sourced advisories.",
+    tags: ["Public Health", "Harm Reduction", "NSW Health", "Web App", "Geolocation"],
+    year: "2026",
+    featured: true,
+    links: [
+      { label: "Live app", url: "https://anchita88-sys.github.io/sentinel-AOD/", external: true },
+      { label: "Project page", url: "sentinel-aod.html", external: false },
+      { label: "GitHub", url: "https://github.com/anchita88-sys/sentinel-AOD", external: true },
+    ],
+  },
+  {
     title: "GP vs Preventive Screening Gap (NSW PHNs)",
     summary:
       "Follow-on analysis testing whether high Medicare GP use aligns with breast, bowel, and cervical screening participation. Identifies South Western Sydney, Nepean Blue Mountains, and Western Sydney as highest-gap PHNs.",
@@ -22,7 +35,7 @@ window.PROJECTS = [
       "Public health equity analysis comparing Medicare GP utilisation and BreastScreen participation across NSW Primary Health Networks, with ABS Census context on cultural diversity and migration.",
     tags: ["Public Health", "Health Equity", "AIHW", "ABS", "NSW"],
     year: "2025",
-    featured: true,
+    featured: false,
     links: [
       { label: "Read report", url: "https://anchita88-sys.github.io/nsw-phn-preventive-health/", external: true },
       { label: "GitHub", url: "https://github.com/anchita88-sys/nsw-phn-preventive-health", external: true },

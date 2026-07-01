@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G775LLCF8V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G775LLCF8V');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NSW Clinical Risk and Harm Reduction Communication Interface — a real-time statewide tool that turns official epidemiological data into immediate, localized action." />
+  <title>NSW Clinical Risk Interface · Anchita Sood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Anchita Sood</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero project-hero">
+      <div class="container">
+        <span class="eyebrow">Public health · Harm reduction · 2026</span>
+        <h1>NSW Clinical Risk and Harm Reduction Communication Interface</h1>
+        <p class="lead">
+          When a public health agency issues a high-priority drug warning, speed is everything.
+          This responsive web application acts as a real-time, statewide translation tool — turning
+          official epidemiological data into immediate, localized action for outreach workers,
+          clinic staff, and event attendees across New South Wales.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="https://anchita88-sys.github.io/sentinel-AOD/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open live app
+          </a>
+          <a
+            class="button button-secondary"
+            href="https://github.com/anchita88-sys/sentinel-AOD"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>The problem</h2>
+          <p>Crucial safety updates often get trapped in dense government PDFs or slow-moving feeds.</p>
+        </div>
+        <article class="panel">
+          <p>
+            By the time an outreach worker or an event attendee reads about a contaminated batch,
+            the risk has already shifted. Traditional health communication treats every audience the
+            same — but a person visiting a local health hub needs entirely different information
+            than someone at a music festival. This interface closes that gap without sacrificing
+            clinical rigour.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Context matters: two sectors, one system</h2>
+          <p>A single objective toggle splits the entire interface into two distinct modes.</p>
+        </div>
+        <div class="feature-split">
+          <article class="panel feature-panel">
+            <h3>Community and primary health</h3>
+            <p>
+              Built for clinic staff, needle syringe programs, and community outreach teams.
+              Clean, understated design focused on pharmaceutical integrity, synthetic opioids,
+              and long-term healthcare pathways.
+            </p>
+          </article>
+          <article class="panel feature-panel feature-panel-night">
+            <h3>Nightlife and major events</h3>
+            <p>
+              One click shifts into high-contrast dark mode tailored for festivals and nightlife.
+              Information priority switches to acute risks — high-dose stimulants, hydration,
+              and onsite peer support care.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Geolocation and smart call-to-actions</h2>
+          <p>An alert is only useful if it tells you exactly what to do next.</p>
+        </div>
+        <article class="panel">
+          <p>
+            Instead of listing a generic phone number, the app uses the browser Geolocation API
+            to identify where the user is across NSW. Users who opt out can select their Local
+            Health District from a dropdown, then choose a level 4 or 5 hospital for more precise
+            local guidance.
+          </p>
+          <p>
+            Once the region is known, the primary call-to-action card changes dynamically.
+            Metropolitan users see directions to the nearest public health centre or a participating
+            pharmacy offering free Take-Home Naloxone. In regional or isolated locations where
+            physical centres are hours away, the dashboard pivots to confidential mail-order
+            naloxone programs and direct links to the NSW Poisons Information Centre.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Data rigour and the provenance engine</h2>
+          <p>Public health relies entirely on trust.</p>
+        </div>
+        <article class="panel">
+          <p>
+            Every alert card includes an expandable panel detailing exactly where the data came from.
+            Official entries tie back to specific government directives — for example, NSW Health
+            Safety Notice SN012/26 (30 June 2026), which detailed clusters of unintentional opioid
+            overdoses in stimulant supplies.
+          </p>
+          <p>
+            For fast-moving grassroots intelligence, a secure portal accepts peer-reported data.
+            These submissions are visually isolated with a distinct purple hazard badge:
+            <strong>Peer Sourced (Clinical Validation Pending)</strong>. Community knowledge can
+            travel fast without compromising the integrity of official medical advisories.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Live application</h2>
+          <p>Try the statewide triage node in your browser.</p>
+        </div>
+        <div class="live-embed">
+          <iframe
+            title="NSW Clinical Risk and Harm Reduction Communication Interface"
+            src="https://anchita88-sys.github.io/sentinel-AOD/"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <p class="embed-note">
+          <a href="https://anchita88-sys.github.io/sentinel-AOD/" target="_blank" rel="noopener noreferrer">
+            Open full screen →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Screenshots</h2>
+          <p>Community health view and nightlife event mode across desktop and mobile.</p>
+        </div>
+        <div class="screenshot-grid">
+          <figure class="screenshot-card">
+            <div class="screenshot-placeholder" aria-label="Desktop community health view placeholder">
+              <span>Desktop · Community health</span>
+            </div>
+            <figcaption>Clinic and outreach view with LHD selection and naloxone pathways</figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-placeholder screenshot-placeholder-dark" aria-label="Desktop nightlife view placeholder">
+              <span>Desktop · Nightlife / events</span>
+            </div>
+            <figcaption>High-contrast event mode with peer support and acute stimulant alerts</figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-placeholder" aria-label="Mobile community view placeholder">
+              <span>Mobile · Community health</span>
+            </div>
+            <figcaption>Responsive layout for field outreach on smaller screens</figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-placeholder screenshot-placeholder-dark" aria-label="Mobile nightlife view placeholder">
+              <span>Mobile · Nightlife / events</span>
+            </div>
+            <figcaption>Event attendee view optimised for low-light environments</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>A scalable model for health promotion</h2>
+        </div>
+        <article class="panel">
+          <p>
+            By taking a system-wide approach, this dashboard moves away from hyper-local gimmicks
+            and embraces scalable public health infrastructure. It respects data governance, values
+            community trust, and shows that modern web development tools can align with rigorous
+            clinical guidelines.
+          </p>
+          <div class="tag-list" style="margin-top: 1rem;">
+            <span class="tag">Harm reduction</span>
+            <span class="tag">NSW Health</span>
+            <span class="tag">Geolocation</span>
+            <span class="tag">Data provenance</span>
+            <span class="tag">React</span>
+            <span class="tag">Public health</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Anchita Sood</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/anchita88-sys/sentinel-AOD" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://anchita88-sys.github.io/sentinel-AOD/" target="_blank" rel="noopener noreferrer">Live app</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
